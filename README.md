@@ -22,6 +22,37 @@ DeepSeek Harness (DSH) 插件：**内置 NapCat**（随 tgz 一起分发），�
 
 > 装好必须**完全退出 DSH 再启动**：服务端 `lib/index.js` 只在启动时加载一次。
 
+## 插件市场收录
+
+本仓库自带一份 **DSH 插件市场索引（format 1）**，推送后在「插件 → 发现」里就能搜到并安装：
+
+```
+https://raw.githubusercontent.com/9178159/dsh-napcat-bot/main/market/index.json
+```
+
+添加方式（DSH 0.2.1+，需先开启 `实验性插件` → `自定义插件市场`）：
+
+1. 打开 **插件 → 发现**（装了可视化市场插件则打开它的市场页）；
+2. 点左上角市场名 → **管理索引源 / 添加索引源**；
+3. 粘贴上面的 URL → **添加** → 刷新，列表里出现 `NapCat QQ 机器人` 即收录成功。
+
+索引文件 `market/index.json` 用 DSH 自带的 `@deepseek-ai/dsh-plugin-market-index` 校验器验过
+（`format: 1`、`engines.dsh >= 0.2.0`、git 源固定到完整 40 位 commit，不是移动分支）。
+图标是内联 SVG data URL（< 32 KiB），不依赖外部图片托管。
+
+> **市场安装 ≠ 完整包**：market 的 git 源装的是本仓库源码，**不含 `vendor/`（111MB 的 NapCat 本体）**。
+> 想要「内置 NapCat 自动启动」的开箱体验，请用 [Releases](https://github.com/9178159/dsh-napcat-bot/releases) 的 tgz；
+> 市场装的轻量版需要自备 NapCat（面板里填 `NapCat 目录`）或后续再解压 vendor。
+
+**发新版本时重新生成索引**（先提交代码，再生成，最后提交索引）：
+
+```bash
+node scripts/build-market-index.mjs          # 固定当前 HEAD，追加/覆盖 package.json 的版本
+node scripts/build-market-index.mjs --commit <40位sha> --time <unix 秒>   # 手动指定
+```
+
+脚本会保留索引里的历史版本，只追加/替换当前版本，所以老用户仍能装回旧版。
+
 ## 2.8.0：联网搜索（手动 + 不懂自动查）
 
 搜索后端**直接用 DSH 自带的 `ctx.web.search()`**（`dsh-base` 已挂 `@deepseek-ai/dsh-web` +

@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-napcat-bot plugin market",
+    "zh": "NapCat QQ 机器人 · 插件市场"
+  },
+  "description": {
+    "en": "Format-1 DSH plugin market index for dsh-napcat-bot.",
+    "zh": "dsh-napcat-bot 的 format-1 插件市场索引，可直接在「插件 → 发现 → 索引源」里添加。"
+  },
+  "metadata": {
+    "categories": {
+      "bot": {
+        "title": {
+          "en": "Bots & Automation",
+          "zh": "机器人与自动化"
+        }
+      },
+      "integration": {
+        "title": {
+          "en": "Integrations",
+          "zh": "集成与连接"
+        }
+      }
+    },
+    "labels": {
+      "onebot": {
+        "title": {
+          "en": "OneBot",
+          "zh": "OneBot 协议"
+        }
+      },
+      "tts": {
+        "title": {
+          "en": "Text to speech",
+          "zh": "语音合成"
+        }
+      },
+      "vision": {
+        "title": {
+          "en": "Image understanding",
+          "zh": "识图"
+        }
+      },
+      "bundled-napcat": {
+        "title": {
+          "en": "Bundled NapCat",
+          "zh": "内置 NapCat"
+        }
+      },
+      "windows": {
+        "title": {
+          "en": "Windows only",
+          "zh": "仅 Windows"
+        }
+      }
+    },
+    "sortKeys": {
+      "stars": {
+        "title": {
+          "en": "GitHub stars",
+          "zh": "GitHub 星标"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-napcat-bot",
+      "title": {
+        "en": "DSH NapCat QQ Bot",
+        "zh": "NapCat QQ 机器人"
+      },
+      "description": {
+        "en": "QQ bot for DeepSeek Harness with bundled NapCat (shipped in the release tarball): starts NapCat for you and wires OneBot WS/HTTP automatically, plus persona, context memory, image understanding on the main model vision, four TTS modes and forced-voice commands, random proactive messages, and web search.",
+        "zh": "DSH 的 QQ 机器人插件：内置 NapCat（随 Releases 的 tgz 分发），启用即自动启动并自动配置 OneBot 正反向 WS；带人格、上下文记忆、识图（复用主模型原生视觉）、四种语音模式与强制语音指令、随缘主动发言、联网搜索、黑白名单与限流。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJkc2gtbmFwY2F0LWJvdCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzRENkJGRSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyMkMzQTYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImZpbiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjAiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iLjcyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIuMzgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMzAiIGZpbGw9InVybCgjYmcpIi8+CiAgPHBhdGggZD0iTTMwIDM0aDU4YTE0IDE0IDAgMCAxIDE0IDE0djI2YTE0IDE0IDAgMCAxLTE0IDE0SDYwTDM4IDEwNFY4OEgzMGExNCAxNCAwIDAgMS0xNC0xNFY0OGExNCAxNCAwIDAgMSAxNC0xNHoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii45NiIvPgogIDxjaXJjbGUgY3g9IjQ0IiBjeT0iNjEiIHI9IjYiIGZpbGw9IiM0RDZCRkUiLz4KICA8Y2lyY2xlIGN4PSI2MiIgY3k9IjYxIiByPSI2IiBmaWxsPSIjNEQ2QkZFIi8+CiAgPGNpcmNsZSBjeD0iODAiIGN5PSI2MSIgcj0iNiIgZmlsbD0iIzIyQzNBNiIvPgogIDxwYXRoIGQ9Ik0xMDggNTZjOCA0IDEyIDkgMTIgMTVzLTQgMTEtMTIgMTVjMi02IDItMjQgMC0zMHoiIGZpbGw9InVybCgjZmluKSIvPgo8L3N2Zz4K",
+      "author": "9178159",
+      "homepage": "https://github.com/9178159/dsh-napcat-bot#readme",
+      "repository": {
+        "url": "https://github.com/9178159/dsh-napcat-bot"
+      },
+      "metadata": {
+        "category": "bot",
+        "keywords": [
+          "qq",
+          "qqbot",
+          "napcat",
+          "onebot",
+          "tts",
+          "vision",
+          "chatbot",
+          "deepseek-harness",
+          "dsh-plugin"
+        ],
+        "labels": [
+          "onebot",
+          "tts",
+          "vision",
+          "bundled-napcat",
+          "windows"
+        ],
+        "sortKeys": {
+          "stars": 0
+        }
+      },
+      "versions": [
+        {
+          "version": "2.8.0",
+          "publishTimestamp": 1792951680,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/9178159/dsh-napcat-bot",
+            "commit": "4bb681144d9c18f0b25485d78e5875749b2c5bd2"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    }
+  ]
+}
