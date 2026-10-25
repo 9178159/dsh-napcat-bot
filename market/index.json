@@ -113,7 +113,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/9178159/dsh-napcat-bot",
-            "commit": "4bb681144d9c18f0b25485d78e5875749b2c5bd2"
+            "commit": "86f648aab3236a9458f7ad50247d54c072dfdd29"
           },
           "engines": {
             "dsh": ">=0.2.0"
