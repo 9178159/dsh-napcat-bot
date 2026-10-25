@@ -1,0 +1,46 @@
+{
+  "name": "dsh-napcat-bot",
+  "version": "2.8.0",
+  "description": "DSH × NapCat QQ 机器人插件：内置 NapCat、自动 OneBot 接入、人格、会话、记忆、风控、识图（复用主模型 V4.1-Flash 原生视觉）、TTS 语音四种模式（全部转语音 / 关键词触发 / 性格随机「想发就发」+ 随机软萌音色 + 人设智能权重，按会话可覆盖）、强制语音指令（绕过 LLM 直接朗读）、随缘主动发言（随机心情判定、仅冷却无次数上限、告别暂停、上下文生成、TTS 随机语音联动）、分段流式回复、黑白名单与限流。",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "napcat",
+    "onebot",
+    "qqbot",
+    "qq"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1",
+    "@deepseek-ai/schemastery": ">=3.18.1"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "vendor",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}
