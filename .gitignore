@@ -12,6 +12,9 @@ vendor/
 .DS_Store
 Thumbs.db
 
+# Release 说明（只在打包发布时用，不进仓库）
+RELEASE_NOTES.md
+
 # 本地配置（含 token，绝不能提交）
 .env
 .env.*

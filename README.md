@@ -1,5 +1,11 @@
 # dsh-napcat-bot
 
+[![release](https://img.shields.io/github/v/release/9178159/dsh-napcat-bot?color=red)](../../releases)
+[![license](https://img.shields.io/github/license/9178159/dsh-napcat-bot)](LICENSE)
+[![platform](https://img.shields.io/badge/platform-Windows-0078d4)](#安装)
+[![deps](https://img.shields.io/badge/npm%20deps-0-brightgreen)](package.json)
+
+
 DeepSeek Harness (DSH) 插件：**内置 NapCat**（随 tgz 一起分发），启用即自动启动、监听 **6099**，并且**通过 NapCat 官方 WebUI API 自动开启 OneBot 正向 HTTP + 正向 WS**，WS 断线自动重连、进程异常自动拉起，让 AI 通过 QQ 私聊 / 群聊与真人对话。
 
 > **开箱即用**：安装并启用插件 → **重启 DSH** → 打开侧边【设置 → 集成 → NapCat QQ 机器人】→ 在「NapCat WebUI」标签页**扫码登录 QQ** → 完事。
@@ -10,7 +16,7 @@ DeepSeek Harness (DSH) 插件：**内置 NapCat**（随 tgz 一起分发），�
 
 ## 安装
 
-- **推荐**：从 [Releases](../../releases) 下载 `dsh-napcat-bot-x.y.z.tgz`，在 DSH 插件市场「导入本地包」里选择它。
+- **推荐**：从 [Releases](https://github.com/9178159/dsh-napcat-bot/releases) 下载 `dsh-napcat-bot-x.y.z.tgz`，在 DSH 插件市场「导入本地包」里选择它。
 - **源码**：本仓库不含 `vendor/`（内置 NapCat 本体约 111MB 的第三方二进制，用 Release 分发更合适）。
   clone 后可直接读改 `lib/`；要打包成可安装 tgz，请把 NapCat 解压到 `vendor/napcat/` 再 `tar -czf`。
 
