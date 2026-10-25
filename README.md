@@ -27,8 +27,11 @@ DeepSeek Harness (DSH) 插件：**内置 NapCat**（随 tgz 一起分发），�
 本仓库自带一份 **DSH 插件市场索引（format 1）**，推送后在「插件 → 发现」里就能搜到并安装：
 
 ```
-https://raw.githubusercontent.com/9178159/dsh-napcat-bot/main/market/index.json
+https://raw.githubusercontent.com/9178159/dsh-napcat-bot/main/market/index.json      # 官方 raw
+https://gcore.jsdelivr.net/gh/9178159/dsh-napcat-bot@main/market/index.json         # 国内镜像（raw 被墙时用这个）
 ```
+
+两个地址内容一致，选一个能打开 `200` 的就行（镜像 `@main` 有几分钟到几小时缓存，想立刻看更新换成官方 raw）。
 
 添加方式（DSH 0.2.1+，需先开启 `实验性插件` → `自定义插件市场`）：
 
