@@ -1,0 +1,18 @@
+# 依赖 / 构建产物
+node_modules/
+*.tgz
+
+# 内置 NapCat 本体（约 111MB 的第三方二进制，不放进源码仓库；
+# 请从 Releases 下载 dsh-napcat-bot-x.y.z.tgz，或自行放入 vendor/napcat）
+vendor/
+
+# 日志 / 临时文件
+*.log
+.tmp*
+.DS_Store
+Thumbs.db
+
+# 本地配置（含 token，绝不能提交）
+.env
+.env.*
+config.local.json
